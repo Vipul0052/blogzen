@@ -44,7 +44,7 @@ const generateResponse = (incomingChatLi) => {
     .catch((error) => {
       console.log('API error:', error);
       messageElement.classList.add('error');
-      messageElement.textContent = 'Oops! Please try again!';
+      messageElement.textContent = 'We are busy right now and will contact you soon!';
     })
     .finally(() => chatBox.scrollTo(0, chatBox.scrollHeight));
 };
